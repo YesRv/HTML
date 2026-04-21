@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fuente-miranda: 'Miranda',sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+/*  NAVIGATION BAR ELEMENTS */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 15px 0px 30px -10px #a4a3a3c2;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.header_name {
+    font-family: var(--fuente-miranda);
+    font-size: 2rem;
+    color: pink;
+    font-weight: bold;
+    width: 170px;
+    text-align: end;
+}
+
+.navbar{
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+.nav_icon {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nav_icon:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+/* MAIN  First section  */
+
+.presentation_title1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 4rem;
+}
+
+.name {
+    color: pink;
+}
+.presentation_title2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    text-align: center; 
+    margin-top: 2%; 
+    margin-bottom: 2%; 
+}
+
+.presentation_title4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: pink;
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+
+.presentation_p1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+}
+
+.presentation_p2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+.history{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.history h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    text-align: left;
+    font-weight: bold;
+    color: #434343;
+    margin-bottom: 2%;
+}
+
+.history p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.buttons_profile {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 100px;
+}
+
+.about-btn { 
+        
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    width: 250px;
+    background: #ffffff;
+    color: gray;
+    border: 1.5px solid #d5d8e0;
+    border-radius: 12px;
+    padding: 0.8rem 2.2rem;
+    transition: color .2s ease;
+    
+}
+
+.about-btn:hover{
+    color: #ff0055;
+    border-color: #ff0055;
+    transform: translateY(-2px);
+    box-shadow: 5px 0px 10px 0px rgb(195, 195, 195);
+}
+
+.projects-btn {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    width: 250px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(255, 98, 150);
+    color: aliceblue;
+    padding: 0.8rem 2.2rem;   
+    transition: opacity .25s,
+}
+
+.projects-btn:hover{
+    opacity: 0.88;
+    transform: translateY(-2px);
+    box-shadow: 5px 0px 10px -5px rgb(254, 46, 202);
+}
+
+
+
+/*  Icons */
+
+
+.img_contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 100px;
+}
+.btn_icon {
+    padding: 0.9rem;
+    border-radius: 55px;
+    border: none;
+    box-shadow: 10px 0px 50px 0px #a4a3a3c2;
+    transition: all 0.3s ease;
+}
+
+.btn_icon:hover {
+    border-color: #ff0055;
+    box-shadow: 10px 0px 50px -18px #ff0055;
+    transform: scale(1.1);
+}
+
+.img_icon{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+/* SKILLS section*/
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    top: 50px;
+}
+/* GRID PROPERTIES */
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.5rem;                           
+    padding: 2rem;
+    padding-top: 10%;
+}
+
+.skills_hability{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+}
+
+.skills_hability:hover{
+    transform: translateY(-10px)
+}
+
+.skills_hability h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1a1a2e;
+}
+
+.skills_hability p {
+    font-size: 0.95rem;
+    color: #666;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* CARDS FOR THE ABOUT SHEET*/
+
+.about_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;                           
+    padding: 2rem;
+    padding-top: 10%;
+    max-width: 700px;  
+    width: 100%;       
+    margin: 0 auto;
+}
+
+.box{
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    width: 300px;
+}
+
+.box h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    color: black;
+    margin-top: 10px;
+}
+
+.box p{
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 0.9rem;
+
+}
+.img_box{
+    height: 50px;
+}
+
+/* EXPERIENCE section */
+
+.experience_section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.experience_section h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 2rem;
+}
+
+.list-experience {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items {
+    position: relative;
+    padding-left: 2rem;        /* espacio para la línea y el punto */
+    padding-bottom: 2.5rem;
+    border-left: 2px solid #e0e0e0;  /* la línea vertical */
+}
+
+.items:last-child {
+    border-left: 2px solid transparent; /* quita la línea en el último */
+}
+
+/* El punto rosado */
+.items::before {
+    content: '';
+    position: absolute;
+    left: -10px;               /* lo saca sobre la línea */
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    background: #ff0055;
+    border-radius: 50%;
+}
+
+/* La fecha */
+.items p:first-child {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ff0055;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+}
+
+.items h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    margin-bottom: 0.2rem;
+}
+
+.items p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0px -5px 30px -15px #a4a3a3c2 ;
+}
