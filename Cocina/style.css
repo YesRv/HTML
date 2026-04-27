@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miranda+Sans:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gold:      #C9973A;
+    --gold-lt:   #E8C47A;
+    --cream:     #F5EFE0;
+    --sand:      #D4C4A0;
+    --earth:     #6B4E2A;
+    --dark:      #1A1208;
+    --ocean:     #2C5F6E;
+    --ocean-lt:  #4A8A9E;
+    --text:      #3A2D1A;
+    --text-lt:   #7A6A50;
+    --white:     #FDFAF4;
+    --color-green-olive: #6E7F5B;
+    --color-green-deep: #3E5F44;
+    --color-accent: #A14E3A;
+    --font-titles: 'Fira Sans', sans-serif;
+    --font-contact: 'Miranda Sans', sans-serif;
+    --font-ph: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+.svg-icon-item{
+    max-width: 30px;
+    width: 100%;
+    height: auto;
+    fill: var(--color-accent);
+    
+}
+
+.experience-section img{
+    height: 280px;
+}
+
+.svg-icon-box{
+    width: 50px;
+
+}
+
+
+/* GALERY CAROUSEL */
+#photos-carousel {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: max-content;
+    height: 100%;
+    animation: scroll-carousel 50s linear infinite;
+}
+
+#photos-carousel:hover .track {
+    animation-play-state: paused;
+}
+
+.photox {
+    width: 300px;  
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*ANIMATION  */
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* FORM CONTACT MEEE*/
+
+.el-body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+.contact_container {
+    display: flex;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+.contact_info {
+    flex: 1;
+}
+
+.contact_info h1 {
+    font-family: var(--font-contact);
+    text-align: left;
+    font-size: 2.5rem;
+    color: var(--color-green-olive);
+    margin-bottom: 1rem;
+}
+
+.contact_info p {
+    font-family: var(--font-ph);
+    color: var(--dark);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font-ph);
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.contact_item a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.contact_item a:hover {
+    text-decoration: underline;
+}
+
+.contact_form {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--sand);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.form_row {
+    display: flex;
+    gap: 16px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.form_group label {
+    font-family: var(--font-ph);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.form_group input,
+.form_group textarea {
+    padding: 12px 16px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: var(--font-ph);
+    font-size: 0.9rem;
+    color: var(--dark);
+    outline: none;
+    transition: border-color 0.2s ease;
+    resize: none;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+    border-color: var(--color-accent);
+}
+
+.btn_submit {
+    background: linear-gradient(135deg,#6E7F5B ,#3E5F44); ;
+    --color-green-deep: ;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: var(--font-ph);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn_submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(23, 113, 40, 0.35);
+}
+
+
