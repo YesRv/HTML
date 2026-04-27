@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CARIBE VIVO — Festival Gastronómico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <a href="styles.css"></a>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav id="main-nav" aria-label="Main navigation">
+    <span class="nav-logo">CARIBE VIVO</span>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Festival</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#multimedia">Gallery</a></li>
+      <li><a href="#chefs">Chefs</a></li>
+      <li><a href="#tastings">Tastings</a></li>
+    </ul>
+    <a href="#tickets" class="nav-cta">Tickets</a>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section id="hero" aria-label="Festival hero">
+      <!-- Replace src with real video -->
+      <video class="hero-video" autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80">
+        <!-- <source src="festival-reel.mp4" type="video/mp4" /> -->
+      </video>
+
+      <!-- Decorative overlays — hidden from assistive tech -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">Gastronomic Festival · 2025 Edition</p>
+        <h1 class="hero-title">CARIBE<br><em>VIVO</em></h1>
+        <p class="hero-subtitle">Caribbean Cuisine · Avant-Garde · Biodiversity</p>
+        <p class="hero-date"><time datetime="2025-08-14/2025-08-17">August 14 — 17</time> · Barranquilla, Colombia</p>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════ -->
+    <section id="about" class="section-wrap dark" aria-labelledby="about-heading">
+      <div class="about-grid">
+
+        <div class="about-text reveal">
+          <p class="section-label">The Festival</p>
+          <h2 id="about-heading" class="display-heading">Where the Caribbean<br><em>reinvents</em> itself</h2>
+          <div class="gold-line" aria-hidden="true"></div>
+          <p>
+            CARIBE VIVO is a one-of-a-kind gathering where avant-garde cuisine meets
+            the biodiversity of the Colombian Caribbean. A space to celebrate ancestral
+            ingredients, contemporary techniques, and the creative spirit of our region.
+          </p>
+          <p>
+            Four days of immersive experiences designed for those who understand
+            gastronomy as cultural expression: workshops, tastings, conversations, and
+            chef's dinners that redefine what it means to eat in the tropics.
+          </p>
+          <ul class="about-tags" role="list" aria-label="Festival themes">
+            <li><span>Chef's Cuisine</span></li>
+            <li><span>Biodiversity</span></li>
+            <li><span>Caribbean Culture</span></li>
+            <li><span>Innovation</span></li>
+            <li><span>Sustainability</span></li>
+          </ul>
+        </div>
+
+        <!-- Group of supporting images — treated as one figure -->
+        <figure class="about-images" aria-label="Festival atmosphere">
+          <div class="about-img reveal reveal-delay-1">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="A beautifully plated chef's dish" />
+          </div>
+          <div class="about-img reveal reveal-delay-2">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="Chef working in a professional kitchen" />
+          </div>
+          <div class="about-img reveal reveal-delay-3">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&q=80" alt="Vibrant tropical ingredients" />
+          </div>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         SCHEDULE
+    ══════════════════════════════════════ -->
+    <section id="schedule" class="section-wrap earth" aria-labelledby="schedule-heading">
+
+      <header class="schedule-header reveal">
+        <p class="section-label">Program</p>
+        <h2 id="schedule-heading" class="display-heading">Four days,<br>a thousand flavors</h2>
+        <div class="gold-line" aria-hidden="true"></div>
+        <div class="schedule-days" role="tablist" aria-label="Festival days">
+          <button class="day-tab active" role="tab" aria-selected="true">Day 1 · Thu 14</button>
+          <button class="day-tab" role="tab" aria-selected="false">Day 2 · Fri 15</button>
+          <button class="day-tab" role="tab" aria-selected="false">Day 3 · Sat 16</button>
+          <button class="day-tab" role="tab" aria-selected="false">Day 4 · Sun 17</button>
+        </div>
+      </header>
+
+      <ol class="schedule-grid" aria-label="Day 1 schedule">
+
+        <li class="schedule-item reveal">
+          <time class="s-time" datetime="2025-08-14T10:00">10:00</time>
+          <div class="s-body">
+            <h3>Official Opening — Welcome to the Caribbean</h3>
+            <p>Inaugural ceremony with a welcome cocktail and exhibition of native ingredients</p>
+          </div>
+          <span class="s-badge talk">Ceremony</span>
+        </li>
+
+        <li class="schedule-item reveal reveal-delay-1">
+          <time class="s-time" datetime="2025-08-14T12:30">12:30</time>
+          <div class="s-body">
+            <h3>Workshop: Tropical Fermentation</h3>
+            <p>Ancestral fermentation techniques applied to Caribbean fruits and tubers</p>
+          </div>
+          <span class="s-badge workshop">Workshop</span>
+        </li>
+
+        <li class="schedule-item reveal reveal-delay-2">
+          <time class="s-time" datetime="2025-08-14T15:00">15:00</time>
+          <div class="s-body">
+            <h3>Pairing Tasting: Sea &amp; Land</h3>
+            <p>Guided sensory experience with products from the coastline and Caribbean interior</p>
+          </div>
+          <span class="s-badge tasting">Tasting</span>
+        </li>
+
+        <li class="schedule-item reveal reveal-delay-3">
+          <time class="s-time" datetime="2025-08-14T18:00">18:00</time>
+          <div class="s-body">
+            <h3>Talk: Biodiversity on the Plate</h3>
+            <p>Conversation with producers, chefs and researchers about forgotten ingredients</p>
+          </div>
+          <span class="s-badge talk">Talk</span>
+        </li>
+
+        <li class="schedule-item reveal reveal-delay-4">
+          <time class="s-time" datetime="2025-08-14T20:30">20:30</time>
+          <div class="s-body">
+            <h3>Chef's Dinner — Single Table</h3>
+            <p>8-course gastronomic experience with three guest chefs. Limited seating</p>
+          </div>
+          <span class="s-badge tasting">Exclusive</span>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         MULTIMEDIA / GALLERY
+    ══════════════════════════════════════ -->
+    <section id="multimedia" aria-labelledby="gallery-heading">
+
+      <header class="multimedia-header reveal">
+        <p class="section-label">Gallery</p>
+        <h2 id="gallery-heading" class="display-heading">Festival images</h2>
+        <div class="gold-line" aria-hidden="true"></div>
+      </header>
+
+      <!-- Each item is a figure since each image has its own caption -->
+      <div class="gallery-grid">
+
+        <figure class="gallery-item gi-1 reveal">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1000&q=80" alt="Festival atmosphere at CARIBE VIVO 2024" />
+          <figcaption class="g-overlay"><span>2024 Edition</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item gi-2 video-thumb reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?w=600&q=80" alt="Festival highlight reel thumbnail" />
+          <figcaption class="g-overlay"><span>Watch reel</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item gi-3 reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Plated dishes from the 2024 festival" />
+          <figcaption class="g-overlay"><span>2024 Creations</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item gi-4 reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1452967712862-0cca1839ff27?w=600&q=80" alt="Local producers market at the festival" />
+          <figcaption class="g-overlay"><span>Producers Market</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item gi-5 video-thumb reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Intimate chef's dinner setting" />
+          <figcaption class="g-overlay"><span>Chef's Dinners</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item gi-6 reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80" alt="Native Caribbean ingredients on display" />
+          <figcaption class="g-overlay"><span>Native Ingredients</span></figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CHEFS & WORKSHOPS
+    ══════════════════════════════════════ -->
+    <section id="chefs" class="section-wrap earth" aria-labelledby="chefs-heading">
+
+      <header class="chefs-header reveal">
+        <p class="section-label">Protagonists</p>
+        <h2 id="chefs-heading" class="display-heading">The festival's<br><em>chefs</em></h2>
+        <div class="gold-line" aria-hidden="true"></div>
+      </header>
+
+      <!-- Each chef is a self-contained article -->
+      <div class="chefs-row">
+
+        <article class="chef-card reveal">
+          <figure class="chef-img">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Portrait of chef Valentina Ospino" />
+          </figure>
+          <div class="chef-info">
+            <p class="chef-role">Guest Chef · Barranquilla</p>
+            <h3>Valentina Ospino</h3>
+            <p>Pioneer in reinterpreting San Andrés cuisine through fermentation techniques and the use of native plants from the archipelago.</p>
+          </div>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-2">
+          <figure class="chef-img">
+            <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=600&q=80" alt="Portrait of chef Marcos de la Hoz" />
+          </figure>
+          <div class="chef-info">
+            <p class="chef-role">Head Chef · Cartagena</p>
+            <h3>Marcos de la Hoz</h3>
+            <p>Renowned for his work with Pacific and Caribbean coastal ingredients, translating biodiversity into unique sensory experiences.</p>
+          </div>
+        </article>
+
+        <article class="chef-card reveal reveal-delay-3">
+          <figure class="chef-img">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Portrait of chef Isabela Cure" />
+          </figure>
+          <div class="chef-info">
+            <p class="chef-role">Guest Chef · Santa Marta</p>
+            <h3>Isabela Cure</h3>
+            <p>Specialist in ancestral Wayuu cuisine, researcher of forgotten crops, and advocate for gastronomy as cultural memory.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Each workshop is also a self-contained article -->
+      <div class="workshops-grid">
+
+        <article class="workshop-card reveal">
+          <p class="workshop-icon" aria-hidden="true">🌿</p>
+          <h3>Caribbean Herbs &amp; Aromas</h3>
+          <p>A sensory journey through native aromatic plants: culinary, medicinal, and cultural uses in contemporary Caribbean cuisine.</p>
+          <footer class="workshop-meta">
+            <span>3 hours</span>
+            <span>Capacity: 20 people</span>
+            <span>Day 2</span>
+          </footer>
+        </article>
+
+        <article class="workshop-card reveal reveal-delay-1">
+          <p class="workshop-icon" aria-hidden="true">🐟</p>
+          <h3>Ceviche &amp; Curing Techniques</h3>
+          <p>Master the art of cold curing with local fish. Learn how tropical acids transform textures and flavors.</p>
+          <footer class="workshop-meta">
+            <span>2.5 hours</span>
+            <span>Capacity: 15 people</span>
+            <span>Day 3</span>
+          </footer>
+        </article>
+
+        <article class="workshop-card reveal reveal-delay-2">
+          <p class="workshop-icon" aria-hidden="true">🍫</p>
+          <h3>Caribbean Cacao — From Bean to Plate</h3>
+          <p>Traceability of Colombian cacao, artisanal fermentation process, and its use in avant-garde savory cuisine.</p>
+          <footer class="workshop-meta">
+            <span>4 hours</span>
+            <span>Capacity: 12 people</span>
+            <span>Day 4</span>
+          </footer>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         TASTINGS
+    ══════════════════════════════════════ -->
+    <section id="tastings" aria-labelledby="tastings-heading">
+
+      <header class="tastings-header reveal">
+        <p class="section-label" style="color:var(--earth)">Tasting Experiences</p>
+        <h2 id="tastings-heading" class="display-heading">Every sip,<br>a story</h2>
+        <div class="gold-line" aria-hidden="true"></div>
+      </header>
+
+      <!-- Each tasting is a self-contained article -->
+      <div class="tastings-grid">
+
+        <article class="tasting-card reveal">
+          <p class="t-num" aria-hidden="true">01</p>
+          <h3>Artisanal Spirits</h3>
+          <p>Caribbean distillates from small producers. Paired with chef's preparations in three courses.</p>
+        </article>
+
+        <article class="tasting-card reveal reveal-delay-1">
+          <p class="t-num" aria-hidden="true">02</p>
+          <h3>Chichas &amp; Fermented Drinks</h3>
+          <p>Ancestral fermented beverages made from corn, cassava, and tropical fruits. Living history in every glass.</p>
+        </article>
+
+        <article class="tasting-card reveal reveal-delay-2">
+          <p class="t-num" aria-hidden="true">03</p>
+          <h3>Dry Forest Honeys</h3>
+          <p>Varieties of honey from native bees of the tropical dry forest. Comparative tasting with sweet pairings.</p>
+        </article>
+
+        <article class="tasting-card reveal reveal-delay-3">
+          <p class="t-num" aria-hidden="true">04</p>
+          <h3>Into the Sea — Raw Seafood</h3>
+          <p>Immersive experience of oysters, ceviches, and raw preparations with products from the Colombian Caribbean.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         TICKETS CTA
+    ══════════════════════════════════════ -->
+    <section id="tickets" aria-labelledby="tickets-heading">
+      <div class="tickets-bg" aria-hidden="true"></div>
+      <div class="tickets-content reveal">
+        <p class="section-label">Reserve your spot</p>
+        <h2 id="tickets-heading" class="display-heading">Be part<br>of the <em>festival</em></h2>
+        <div class="gold-line" style="margin: 1.5rem auto;" aria-hidden="true"></div>
+        <p>Tickets available for workshops, tastings, and chef's dinners.<br>Limited capacity — experiences designed for a few.</p>
+        <div>
+          <a href="#" class="btn-primary">Buy Tickets</a>
+          <a href="#" class="btn-outline">View Program</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer aria-label="Site footer">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <span class="nav-logo">CARIBE VIVO</span>
+        <p>Avant-garde gastronomic festival dedicated to Colombian Caribbean cuisine in all its biodiversity and cultural expression.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Festival links">
+        <h4>Festival</h4>
+        <ul role="list">
+          <li><a href="#about">The Concept</a></li>
+          <li><a href="#schedule">Program</a></li>
+          <li><a href="#chefs">Chefs</a></li>
+          <li><a href="#tastings">Tastings</a></li>
+        </ul>
+      </nav>
+
+      <nav class="footer-col" aria-label="Attend links">
+        <h4>Attend</h4>
+        <ul role="list">
+          <li><a href="#">Tickets</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Accommodation</a></li>
+          <li><a href="#">Getting There</a></li>
+        </ul>
+      </nav>
+
+      <address class="footer-col">
+        <h4>Contact</h4>
+        <ul role="list">
+          <li><a href="mailto:hello@caribevivo.co">hello@caribevivo.co</a></li>
+          <li><a href="#">@caribevivofest</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Sponsors</a></li>
+        </ul>
+      </address>
+
+    </div>
+
+    <div class="footer-bottom">
+      <small>© 2025 CARIBE VIVO — Gastronomic Festival</small>
+      <span>Barranquilla, Colombia</span>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       JS
+  ══════════════════════════════════════ -->
+  <script>
+    /* ── Scroll reveal ── */
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    /* ── Nav on scroll ── */
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    /* ── Schedule day tabs ── */
+    document.querySelectorAll('.day-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.day-tab').forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+      });
+    });
+  </script>
+
+</body>
+</html>
